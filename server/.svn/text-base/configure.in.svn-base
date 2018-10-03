@@ -1,0 +1,57 @@
+AC_INIT(src/main.cpp)
+
+PACKAGE=textual
+VERSION=0.1.0
+
+AM_INIT_AUTOMAKE($PACKAGE, $VERSION)
+
+INTI_REQUIRED_VERSION=1.0.7
+AC_SUBST(INTI_CFLAGS)
+AC_SUBST(INTI_LIBS)
+AC_CHECK_HEADERS(boost/thread.hpp)
+AC_CHECK_HEADERS(boost/bind.hpp)
+AC_CHECK_HEADERS(boost/asio.hpp)
+AC_CHECK_LIB(boost_system-gcc-mt, main, , [
+        AC_CHECK_LIB(boost_system-mt, main, , [
+                AC_CHECK_LIB(boost_system, main, , [
+                        AC_MSG_ERROR("Linking against boost::system library failed.")
+                ])
+        ])
+])
+
+AC_CHECK_LIB(boost_thread-gcc-mt, main, , [
+        AC_CHECK_LIB(boost_thread-mt, main, , [
+                AC_CHECK_LIB(boost_thread, main, , [
+                        AC_MSG_ERROR("Linking against boost::thread library failed.")
+                ])
+        ])
+])
+
+AC_CHECK_LIB(cryptopp, main)
+AC_CHECK_LIB(mysqlclient, main)
+
+
+AC_HEADER_STDBOOL
+AC_C_CONST
+AC_C_INLINE
+AC_TYPE_INT16_T
+AC_TYPE_INT32_T
+AC_TYPE_INT64_T
+AC_TYPE_SIZE_T
+AC_STRUCT_TM
+AC_TYPE_UINT16_T
+AC_TYPE_UINT32_T
+AC_TYPE_UINT64_T
+AC_TYPE_UINT8_T
+AC_CHECK_TYPES([ptrdiff_t])
+
+AC_FUNC_MALLOC
+AC_FUNC_MEMCMP
+AC_FUNC_REALLOC
+AC_CHECK_FUNCS([ceil floor ftime gethostbyname gethostname memset pow sqrt strcasecmp strncasecmp strstr strtol])
+
+AC_PROG_CXX
+
+AC_OUTPUT(Makefile src/Makefile)
+
+echo Configure is now complete type make to build it

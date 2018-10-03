@@ -1,0 +1,59 @@
+CPP  = g++
+OBJ  = obj/auxiliar.o obj/ban.o obj/channels.o obj/client.o obj/configreader.o obj/database.o obj/dispatcher.o obj/logger.o obj/main.o obj/mainframe.o obj/server.o obj/user.o obj/wildcard.o
+LINKOBJ  = obj/auxiliar.o obj/ban.o obj/channels.o obj/client.o obj/configreader.o obj/database.o obj/dispatcher.o obj/logger.o obj/main.o obj/mainframe.o obj/server.o obj/user.o obj/wildcard.o
+LIBS =  -L"C:/Dev-Cpp/lib" -lboost_thread -llua5.1 -lws2_32 -lcryptopp -lmysql -lboost_system -lwsock32
+CXXINCS =  -I"C:/Dev-Cpp/include" -I"include" -I"."
+DEFINS = -D_DEBUG
+BIN  = Textual
+CXXFLAGS = $(CXXINCS) -g -ggdb -O2 -frtti -fexceptions -enable-stdcall-fixup -enable-auto-import -enable-runtime-pseudo-reloc -s -mthreads -Wall $(DEFINES)
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before Textual all-after
+
+
+clean: clean-custom
+	$(RM) $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "Textual" $(LIBS)
+
+obj/auxiliar.o: src/auxiliar.cpp
+	$(CPP) -c src/auxiliar.cpp -o obj/auxiliar.o $(CXXFLAGS)
+
+obj/ban.o: src/ban.cpp
+	$(CPP) -c src/ban.cpp -o obj/ban.o $(CXXFLAGS)
+
+obj/channels.o: src/channels.cpp
+	$(CPP) -c src/channels.cpp -o obj/channels.o $(CXXFLAGS)
+
+obj/client.o: src/client.cpp
+	$(CPP) -c src/client.cpp -o obj/client.o $(CXXFLAGS)
+
+obj/configreader.o: src/configreader.cpp
+	$(CPP) -c src/configreader.cpp -o obj/configreader.o $(CXXFLAGS)
+
+obj/database.o: src/database.cpp
+	$(CPP) -c src/database.cpp -o obj/database.o $(CXXFLAGS)
+
+obj/dispatcher.o: src/dispatcher.cpp
+	$(CPP) -c src/dispatcher.cpp -o obj/dispatcher.o $(CXXFLAGS)
+
+obj/logger.o: src/logger.cpp
+	$(CPP) -c src/logger.cpp -o obj/logger.o $(CXXFLAGS)
+
+obj/main.o: src/main.cpp
+	$(CPP) -c src/main.cpp -o obj/main.o $(CXXFLAGS)
+
+obj/mainframe.o: src/mainframe.cpp
+	$(CPP) -c src/mainframe.cpp -o obj/mainframe.o $(CXXFLAGS)
+
+obj/server.o: src/server.cpp
+	$(CPP) -c src/server.cpp -o obj/server.o $(CXXFLAGS)
+
+obj/user.o: src/user.cpp
+	$(CPP) -c src/user.cpp -o obj/user.o $(CXXFLAGS)
+
+obj/wildcard.o: src/wildcard.cpp
+	$(CPP) -c src/wildcard.cpp -o obj/wildcard.o $(CXXFLAGS)

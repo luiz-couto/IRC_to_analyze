@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 22
+/svn/!svn/ver/58/trunk
+END
+config.conf
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/53/trunk/config.conf
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 29
+/svn/!svn/ver/38/trunk/README
+END
+mysql.sql
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/!svn/ver/2/trunk/mysql.sql
+END
+INSTALL
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/!svn/ver/43/trunk/INSTALL
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/!svn/ver/43/trunk/COPYING
+END
+missing
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/!svn/ver/41/trunk/missing
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/36/trunk/Makefile.am
+END
+NEWS
+K 25
+svn:wc:ra_dav:version-url
+V 27
+/svn/!svn/ver/38/trunk/NEWS
+END
+install-sh
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/!svn/ver/38/trunk/install-sh
+END
+Makefile.win32
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/15/trunk/Makefile.win32
+END
+configure
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/50/trunk/configure
+END
+motd.txt
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/!svn/ver/2/trunk/motd.txt
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/42/trunk/Makefile.in
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/!svn/ver/38/trunk/AUTHORS
+END
+configure.in
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/47/trunk/configure.in
+END
+depcomp
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/!svn/ver/52/trunk/depcomp
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/38/trunk/ChangeLog
+END

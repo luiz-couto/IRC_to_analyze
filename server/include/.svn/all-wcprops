@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/!svn/ver/56/trunk/include
+END
+defines.h
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/35/trunk/include/defines.h
+END
+auxiliar.h
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/25/trunk/include/auxiliar.h
+END
+user.h
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/28/trunk/include/user.h
+END
+client.h
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/56/trunk/include/client.h
+END
+mainframe.h
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/25/trunk/include/mainframe.h
+END
+logger.h
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/25/trunk/include/logger.h
+END
+ban.h
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/25/trunk/include/ban.h
+END
+database.h
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/25/trunk/include/database.h
+END
+dispatcher.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/25/trunk/include/dispatcher.h
+END
+server.h
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/25/trunk/include/server.h
+END
+configreader.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/25/trunk/include/configreader.h
+END
+wildcard.h
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/25/trunk/include/wildcard.h
+END
+channels.h
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/32/trunk/include/channels.h
+END

@@ -1,0 +1,30 @@
+/*!
+* \file
+* 	Config file.
+* \usage
+*   configuration
+*   mysql_port = mysql port. (used to connect to mysql).
+*   host (used to bind the server in.)
+*   ports (ports used to bind the server in)
+*   server_name (its obvious (server name))
+*   server_host (/////////// (to show in MOTD))
+*   max_pending_connections (max pending connections)
+  */
+mysql_host=127.0.0.1
+mysql_port=3306
+mysql_user=your_user
+mysql_pass=your_password
+mysql_db=your_database
+host=127.0.0.1
+ports=6667;6668;6669
+server_name=Textual
+server_host=irc.rox.net
+max_pending_connections=0
+executable_name=Textual
+
+<me>
+	nick = "foo";
+	ident = "foo";
+	host = "foo.net";
+</me>
+//////////////////eof//////////////////
