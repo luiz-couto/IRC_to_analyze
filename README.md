@@ -1,6 +1,6 @@
 # IRC_to_analyze
 
-# Plano para analize do codigo:
+# Plano para análise do codigo:
 - server (o codigo esta dentro de src/)
   - entender a lógica do main.cpp e como ele chama os outros modulos
   - entender os .h e como estao implementados
